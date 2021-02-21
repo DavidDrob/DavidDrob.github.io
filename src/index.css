@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #131319;
+    color: white;
+    font-family: gotham;
+    font-size: 18px;
+}
+
+span{
+    color: #FFD576;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg{
+    background: #1d1d1d77;
+}
+
+.width{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar{
+    width: 1vw;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#ff7b00, #ffb300);
+    filter: drop-shadow(16px 16px 10px rgb(202, 24, 24));
+}
+
+@media screen and (max-width: 1440px){
+    body{
+        font-size: 18px;
+    }
+    .tech li{
+        font-size: 16px;
+    }
+    .text-overview{
+        width: 65%;
+    }
+    .image-preview img{
+        width: 27vw;
+    }
+  }
