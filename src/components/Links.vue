@@ -181,7 +181,7 @@
       </svg>
       <svg
         v-else
-        class="w-6 h-6"
+        class="w-6 h-6 hover:animate-[spin_2s_infinite]"
         fill="none"
         :stroke="buttonColor"
         viewBox="0 0 24 24"
