@@ -7,13 +7,13 @@
       <div id="hero" class="font-serif">
         <h1 class="text-6xl font-bold">Hey! 🙋‍♂️</h1>
         <h2 class="text-2xl mt-16">
-          I am David.<br />
+          <span class="text-4xl">I am David Drobnak.</span><br />
           A
-          <span class="text-neutral-500 font-semibold dark:text-zinc-400"
+          <span class="font-semibold text-green-400 dark:text-green-300"
             >high-school computer science student</span
           ><br />
           building
-          <span class="text-neutral-500 font-semibold dark:text-zinc-400"
+          <span class="font-semibold text-green-400 dark:text-green-300"
             >web apps.</span
           >
         </h2>
@@ -28,9 +28,7 @@
             <span class="border-b-2 border-teal-500">TailwindCSS</span>
           </a>
         </h2>
-        <!-- <h2 class="mt-4 text-lg">
-          📍 Looking for an internship either remote or in vienna
-        </h2> -->
+        <h2 class="mt-4 text-lg">🌆 Based near Vienna, Austria</h2>
       </div>
     </div>
   </div>

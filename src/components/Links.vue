@@ -181,7 +181,7 @@
       </svg>
       <svg
         v-else
-        class="w-6 h-6 hover:animate-[spin_2s_infinite]"
+        class="w-6 h-6 hover:animate-[spin_4s_linear_infinite]"
         fill="none"
         :stroke="buttonColor"
         viewBox="0 0 24 24"
@@ -243,8 +243,6 @@ export default {
 
 <style scoped>
 nav {
-  /* background: linear-gradient(220.55deg, #ff896d 0%, #d02020 100%); */
-  /* background: linear-gradient(220.55deg, #565656 0%, #353535 100%); */
   background: #353535;
 }
 </style>
