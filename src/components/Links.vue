@@ -13,71 +13,111 @@
       items-center
     "
   >
-    <div
-      class="
-        text-white
-        bg-neutral-800
-        dark:bg-gray-50
-        w-14
-        h-14
-        mb-4
-        grid
-        place-items-center
-        rounded-xl
-        cursor-pointer
-        transition
-        ease-out
-        hover:-translate-y-1 hover:scale-110
-        duration-200
-      "
-    >
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        :stroke="buttonColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+    <div>
+      <router-link
+        class="
+          text-white
+          link
+          w-14
+          h-14
+          mb-4
+          grid
+          place-items-center
+          rounded-xl
+          cursor-pointer
+          transition
+          ease-out
+          hover:-translate-y-1 hover:scale-110
+          duration-200
+        "
+        to="/"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        ></path>
-      </svg>
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          :stroke="buttonColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          ></path>
+        </svg>
+      </router-link>
     </div>
-    <div
-      class="
-        text-white
-        bg-neutral-800
-        dark:bg-gray-50
-        w-14
-        h-14
-        mb-4
-        grid
-        place-items-center
-        rounded-xl
-        cursor-pointer
-        transition
-        ease-out
-        hover:-translate-y-1 hover:scale-110
-        duration-200
-      "
-    >
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        :stroke="buttonColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+
+    <div>
+      <router-link
+        class="
+          text-white
+          link
+          w-14
+          h-14
+          mb-4
+          grid
+          place-items-center
+          rounded-xl
+          cursor-pointer
+          transition
+          ease-out
+          hover:-translate-y-1 hover:scale-110
+          duration-200
+        "
+        to="/projects"
       >
-        <path
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          :stroke="buttonColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          ></path>
+        </svg>
+      </router-link>
+    </div>
+    <div>
+      <router-link
+        class="
+          text-white
+          link
+          w-14
+          h-14
+          mb-4
+          grid
+          place-items-center
+          rounded-xl
+          cursor-pointer
+          transition
+          ease-out
+          hover:-translate-y-1 hover:scale-110
+          duration-200
+        "
+        to="/tech"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="w-6 h-6"
+          fill="none"
+          :stroke="buttonColor"
+          stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          stroke-width="2"
-          d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-        ></path>
-      </svg>
+        >
+          <path
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+          ></path>
+        </svg>
+      </router-link>
     </div>
     <div
       class="
@@ -234,15 +274,20 @@ export default {
   mounted() {
     // Dark mode preference using localStorage
     this.checkTheme();
-
-    // Whenever the user explicitly chooses to respect the OS preference
-    // localStorage.removeItem("theme");
   },
 };
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 nav {
   background: #353535;
+}
+
+.router-link-exact-active {
+  @apply bg-green-300 !important;
+}
+.link {
+  @apply bg-neutral-800;
+  @apply dark:bg-gray-50;
 }
 </style>
