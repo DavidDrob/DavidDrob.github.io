@@ -11,6 +11,8 @@
       ml-6
       flex flex-col
       items-center
+      bg-neutral-200
+      dark:bg-neutral-700
     "
   >
     <div>
@@ -119,71 +121,78 @@
         </svg>
       </router-link>
     </div>
-    <div
-      class="
-        text-white
-        bg-neutral-800
-        dark:bg-gray-50
-        w-14
-        h-14
-        mb-4
-        grid
-        place-items-center
-        rounded-xl
-        cursor-pointer
-        transition
-        ease-out
-        hover:-translate-y-1 hover:scale-110
-        duration-200
-      "
-    >
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        :stroke="buttonColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+    <div>
+      <a
+        href="mailto:david.drobnak26@gmail.com"
+        class="
+          text-white
+          bg-neutral-800
+          dark:bg-gray-50
+          w-14
+          h-14
+          mb-4
+          grid
+          place-items-center
+          rounded-xl
+          cursor-pointer
+          transition
+          ease-out
+          hover:-translate-y-1 hover:scale-110
+          duration-200
+        "
       >
-        <path
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          :stroke="buttonColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+    <div>
+      <a
+        href="https://github.com/DavidDrob"
+        class="
+          text-white
+          bg-neutral-800
+          dark:bg-gray-50
+          w-14
+          h-14
+          mb-4
+          grid
+          place-items-center
+          rounded-xl
+          cursor-pointer
+          transition
+          ease-out
+          hover:-translate-y-1 hover:scale-110
+          duration-200
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          :stroke="buttonColor"
+          stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          stroke-width="2"
-          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-        ></path>
-      </svg>
-    </div>
-    <div
-      class="
-        text-white
-        bg-neutral-800
-        dark:bg-gray-50
-        w-14
-        h-14
-        grid
-        place-items-center
-        rounded-xl
-        cursor-pointer
-        transition
-        ease-out
-        hover:-translate-y-1 hover:scale-110
-        duration-200
-      "
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        :stroke="buttonColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path
-          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-        ></path>
-      </svg>
+        >
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+          ></path>
+        </svg>
+      </a>
     </div>
     <div
       class="
@@ -279,10 +288,6 @@ export default {
 </script>
 
 <style scoped lang="postcss">
-nav {
-  background: #353535;
-}
-
 .router-link-exact-active {
   @apply bg-green-300 !important;
 }

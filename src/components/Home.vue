@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-10/12 h-4/6 mr-24 m-auto text-neutral-900 dark:text-white">
     <div id="hero" class="font-serif">
-      <h1 class="text-6xl font-bold">Hey! 🙋‍♂️</h1>
+      <h1 class="text-6xl font-bold text-glow">Hey! 🙋‍♂️</h1>
       <h2 class="text-2xl mt-16">
         <span class="text-4xl">I am David Drobnak.</span><br />
         A
@@ -34,3 +34,11 @@ export default {
   name: "Home",
 };
 </script>
+
+<style>
+.text-gradient {
+  background: linear-gradient(to right, #30cbd0, #59d63a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
