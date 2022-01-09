@@ -253,6 +253,7 @@ export default {
   },
   mounted() {
     // Dark mode preference using localStorage
+    localStorage.setItem("theme", "dark");
     this.checkTheme();
   },
 };

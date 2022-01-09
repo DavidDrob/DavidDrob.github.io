@@ -73,13 +73,13 @@ export default {
         "Vue.JS": ["bg-green-400", "shadow-green-500/50", "text-green-50"],
         "Node.JS": ["bg-yellow-400", "shadow-yellow-500/50", "text-yellow-700"],
       },
-      buttonColor: "",
+      buttonColor: "white",
     };
   },
   mounted() {
     setInterval(() => {
       if (localStorage.theme === "dark") this.buttonColor = "white";
-      else this.buttonColor = "#1C1C1C";
+      else if (localStorage.theme === "light") this.buttonColor = "#1C1C1C";
     }, 10);
   },
 };
