@@ -2,14 +2,20 @@
   <nav
     class="
       absolute
-      inset-y-0
-      left-0
-      h-3/5
+      inset-x-0
+      lg:inset-0 lg:w-min
+      bottom-6
+      lg:h-3/5
       m-auto
       rounded-xl
       p-5
-      ml-6
-      flex flex-col
+      lg:ml-6 lg:flex
+      table-column
+      w-1/2
+      overflow-auto
+      lg:overflow-hidden
+      h-1/6
+      lg:flex-col
       items-center
       bg-neutral-200
       dark:bg-neutral-700
@@ -20,8 +26,8 @@
         class="
           text-white
           link
-          w-14
-          h-14
+          lg:w-14 lg:h-14
+          h-10
           mb-4
           grid
           place-items-center
@@ -56,8 +62,8 @@
         class="
           text-white
           link
-          w-14
-          h-14
+          lg:w-14 lg:h-14
+          h-10
           mb-4
           grid
           place-items-center
@@ -87,49 +93,14 @@
       </router-link>
     </div>
     <div>
-      <router-link
-        class="
-          text-white
-          link
-          w-14
-          h-14
-          mb-4
-          grid
-          place-items-center
-          rounded-xl
-          cursor-pointer
-          transition
-          ease-out
-          hover:-translate-y-1 hover:scale-110
-          duration-200
-        "
-        to="/tech"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-6 h-6"
-          fill="none"
-          :stroke="buttonColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path
-            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
-          ></path>
-        </svg>
-      </router-link>
-    </div>
-    <div>
       <a
         href="mailto:david.drobnak26@gmail.com"
         class="
           text-white
           bg-neutral-800
           dark:bg-gray-50
-          w-14
-          h-14
+          lg:w-14 lg:h-14
+          h-10
           mb-4
           grid
           place-items-center
@@ -164,8 +135,8 @@
           text-white
           bg-neutral-800
           dark:bg-gray-50
-          w-14
-          h-14
+          lg:w-14 lg:h-14
+          h-10
           mb-4
           grid
           place-items-center
@@ -199,8 +170,8 @@
         text-white
         bg-neutral-800
         dark:bg-gray-50
-        w-14
-        h-14
+        lg:w-14 lg:h-14
+        h-12
         grid
         place-items-center
         rounded-xl
@@ -209,7 +180,7 @@
         ease-out
         hover:translate-y-1 hover:scale-110
         duration-200
-        mt-auto
+        lg:mt-auto
       "
       @click="setTheme"
     >

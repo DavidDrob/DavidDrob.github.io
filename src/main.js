@@ -16,11 +16,6 @@ const router = createRouter({
       name: "Projects",
       component: () => import("./components/Project.vue"),
     },
-    {
-      path: "/tech",
-      name: "Technology Stack",
-      component: () => import("./components/Tech.vue"),
-    },
   ],
 });
 

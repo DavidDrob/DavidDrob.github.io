@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="bg-gray-50 dark:bg-neutral-900 h-screen flex">
-    <Links />
+    <Links class="" />
     <router-view></router-view>
   </div>
 </template>
@@ -28,6 +28,12 @@ export default {
 }
 ::-webkit-scrollbar {
   width: 5px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 
 ::-webkit-scrollbar-track {

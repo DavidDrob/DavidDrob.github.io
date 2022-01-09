@@ -1,13 +1,16 @@
 <template>
-  <div class="flex w-10/12 h-4/6 mr-24 m-auto text-neutral-900 dark:text-white">
+  <div
+    class="flex w-10/12 h-4/6 lg:w-3/5 m-auto text-neutral-900 dark:text-white"
+  >
     <div id="hero" class="font-serif w-full overflow-x-hidden">
       <h1 class="text-6xl mb-12 font-bold">Projects</h1>
       <div
         class="
-          flex
+          flex flex-col
           justify-between
           items-center
           w-3/4
+          mb-28
           bg-neutral-200
           text-neutral-700
           dark:bg-neutral-700
@@ -25,20 +28,21 @@
         <img
           src="../assets/clean-tab.png"
           alt="demo image"
-          class="max-h-56 w-96 rounded-r-xl"
+          class="w-full rounded-b-xl"
         />
       </div>
+
       <div
         class="
-          flex
+          flex flex-col
           justify-between
           items-center
           w-3/4
+          mb-28
           bg-neutral-200
           text-neutral-700
           dark:bg-neutral-700
           rounded-xl
-          mt-12
           dark:text-white
         "
       >
@@ -52,21 +56,21 @@
         <img
           src="../assets/faceit-bot.png"
           alt="demo image"
-          class="max-h-56 w-96 rounded-r-xl"
+          class="w-full h-fit rounded-b-xl"
         />
       </div>
+
       <div
         class="
-          flex
+          flex flex-col
           justify-between
           items-center
           w-3/4
+          mb-28
           bg-neutral-200
           text-neutral-700
           dark:bg-neutral-700
           rounded-xl
-          mt-12
-          overflow-x-hidden
           dark:text-white
         "
       >
@@ -80,21 +84,21 @@
         <img
           src="../assets/study-app.png"
           alt="demo image"
-          class="max-h-56 w-96 rounded-r-xl"
+          class="w-full h-fit rounded-b-xl"
         />
       </div>
+
       <div
         class="
-          flex
+          flex flex-col
           justify-between
           items-center
           w-3/4
+          mb-28
           bg-neutral-200
           text-neutral-700
           dark:bg-neutral-700
           rounded-xl
-          mt-12
-          overflow-x-hidden
           dark:text-white
         "
       >
@@ -108,7 +112,7 @@
         <img
           src="../assets/portfolio.png"
           alt="demo image"
-          class="max-h-56 w-96 rounded-r-xl"
+          class="w-full h-fit rounded-b-xl"
         />
       </div>
     </div>

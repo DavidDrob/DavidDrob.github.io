@@ -1,18 +1,18 @@
 <template>
-  <aside class="pl-4 w-full">
-    <p class="text-2xl font-bold">{{ title }}</p>
+  <aside class="pl-4 w-full mb-4">
+    <p class="text-2xl font-bold mt-4">{{ title }}</p>
     <p class="mt-2 w-3/4">{{ description }}</p>
     <hr class="mt-4 mb-2" />
-    <ul class="flex justify-around items-center">
+    <ul class="flex lg:items-center w-3/4 flex-wrap lg:flex-nowrap">
       <div class="flex" v-for="(tech, index) in techs" :key="index">
         <li
-          class="shadow-lg px-3 py-1 rounded-xl mr-3"
+          class="shadow-lg px-3 py-1 rounded-xl mr-3 mb-2 lg:mb-0"
           :class="techColorMap[tech]"
         >
           {{ tech }}
         </li>
       </div>
-      <div class="flex items-center ml-auto mr-6">
+      <div class="flex lg:justify-around lg:items-center lg:ml-auto mr-6">
         <li>
           <a :href="github" target="_blank">
             <svg
@@ -67,7 +67,7 @@ export default {
   data() {
     return {
       techColorMap: {
-        TailwindCSS: ["bg-cyan-300", "shadow-cyan-400/50"],
+        TailwindCSS: ["bg-cyan-300", "shadow-cyan-400/50", "text-white"],
         "Vue.JS": ["bg-green-400", "shadow-green-500/50", "text-green-50"],
         "Node.JS": ["bg-yellow-400", "shadow-yellow-500/50", "text-yellow-700"],
       },

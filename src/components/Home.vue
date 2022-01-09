@@ -1,6 +1,16 @@
 <template>
-  <div class="flex w-10/12 h-4/6 mr-24 m-auto text-neutral-900 dark:text-white">
-    <div id="hero" class="font-serif">
+  <div class="flex h-4/6 lg:w-3/5 m-auto text-neutral-900 dark:text-white">
+    <div
+      id="hero"
+      class="
+        font-serif
+        w-screen
+        text-center
+        flex flex-col
+        items-center
+        lg:text-left lg:items-start lg:w-screen
+      "
+    >
       <h1 class="text-6xl font-bold text-glow">Hey! 🙋‍♂️</h1>
       <h2 class="text-2xl mt-16">
         <span class="text-4xl">I am David Drobnak.</span><br />
