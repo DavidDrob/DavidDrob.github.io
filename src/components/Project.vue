@@ -1,9 +1,17 @@
 <template>
   <div
-    class="flex w-10/12 h-4/6 lg:w-3/5 m-auto text-neutral-900 dark:text-white"
+    class="
+      flex flex-col
+      w-10/12
+      h-4/6
+      lg:w-3/5
+      m-auto
+      text-neutral-900
+      dark:text-white
+    "
   >
+    <h1 class="text-6xl mb-12 font-bold dark:text-glow">Projects</h1>
     <div id="hero" class="font-serif w-full overflow-x-hidden">
-      <h1 class="text-6xl mb-12 font-bold">Projects</h1>
       <div
         class="
           flex flex-col

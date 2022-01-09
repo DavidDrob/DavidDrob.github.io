@@ -11,17 +11,19 @@
         lg:text-left lg:items-start lg:w-screen
       "
     >
-      <h1 class="text-6xl font-bold text-glow">Hey! 🙋‍♂️</h1>
+      <h1 class="text-6xl font-bold">
+        <span class="dark:text-glow">Hey!</span> 🙋‍♂️
+      </h1>
       <h2 class="text-2xl mt-16">
         <span class="text-4xl">I am David Drobnak.</span><br />
         A
-        <span class="font-semibold text-green-400 dark:text-green-300"
+        <span class="font-semibold gradient-light dark:gradient-primary"
           >high-school computer science student</span
         ><br />
         building
-        <span class="font-semibold text-green-400 dark:text-green-300"
-          >web apps.</span
-        >
+        <span class="font-semibold gradient-light dark:gradient-primary"
+          >web apps</span
+        >.
       </h2>
       <hr class="mt-4" />
       <h2 class="mt-8 text-lg">

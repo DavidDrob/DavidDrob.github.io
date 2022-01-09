@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 80px rgba(205, 255, 192, 0.75),
+      0 0 32px rgba(65, 255, 154, 0.24);
+  }
+  .no-text-glow {
+    text-shadow: 0;
+  }
+  .gradient-primary {
+    background: linear-gradient(220.55deg, #ffeb3a 0%, #4def8e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-light {
+    background: linear-gradient(220.55deg, #00b960 0%, #00552c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

@@ -1,6 +1,8 @@
 <template>
   <aside class="pl-4 w-full mb-4">
-    <p class="text-2xl font-bold mt-4">{{ title }}</p>
+    <p class="text-2xl font-bold mt-4">
+      {{ title }}
+    </p>
     <p class="mt-2 w-3/4">{{ description }}</p>
     <hr class="mt-4 mb-2" />
     <ul class="flex lg:items-center w-3/4 flex-wrap lg:flex-nowrap">
