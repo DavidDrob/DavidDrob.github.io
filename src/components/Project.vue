@@ -3,7 +3,6 @@
     class="
       flex flex-col
       w-10/12
-      h-full
       my-12
       lg:w-3/5
       m-auto
