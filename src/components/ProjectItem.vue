@@ -5,10 +5,10 @@
     </p>
     <p class="mt-2 w-3/4">{{ description }}</p>
     <hr class="mt-4 mb-2" />
-    <ul class="flex lg:items-center w-3/4 flex-wrap lg:flex-nowrap">
+    <ul class="flex items-center w-3/4 flex-wrap lg:flex-nowrap">
       <div class="flex" v-for="(tech, index) in techs" :key="index">
         <li
-          class="shadow-lg px-3 py-1 rounded-xl mr-3 mb-2 lg:mb-0"
+          class="shadow-lg px-3 py-1 rounded-xl mr-3 lg:mb-0 my-1"
           :class="techColorMap[tech]"
         >
           {{ tech }}

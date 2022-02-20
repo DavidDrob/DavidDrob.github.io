@@ -3,14 +3,15 @@
     class="
       flex flex-col
       w-10/12
-      h-4/6
+      h-full
+      my-12
       lg:w-3/5
       m-auto
       text-neutral-900
       dark:text-white
     "
   >
-    <h1 class="text-6xl mb-12 font-bold dark:text-glow">Projects</h1>
+    <h1 class="text-6xl mb-12 font-bold dark:text-glow font-serif">Projects</h1>
     <div id="hero" class="font-serif w-full overflow-x-hidden">
       <div
         class="

@@ -13,9 +13,8 @@
       table-column
       w-1/2
       overflow-auto
-      lg:overflow-hidden
-      h-1/6
-      lg:flex-col
+      h-1/5
+      lg:overflow-hidden lg:flex-col
       items-center
       bg-neutral-200
       dark:bg-neutral-700

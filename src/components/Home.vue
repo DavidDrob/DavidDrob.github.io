@@ -1,5 +1,7 @@
 <template>
-  <div class="flex h-4/6 lg:w-3/5 m-auto text-neutral-900 dark:text-white">
+  <div
+    class="flex h-5/6 mt-24 lg:w-3/5 m-auto text-neutral-900 dark:text-white"
+  >
     <div
       id="hero"
       class="
