@@ -4,8 +4,8 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 80px rgba(205, 255, 192, 0.75),
-      0 0 32px rgba(65, 255, 154, 0.24);
+    text-shadow: 0 0 80px rgba(73, 180, 46, 0.76),
+      0 0 32px rgba(65, 255, 154, 0.384);
   }
   .no-text-glow {
     text-shadow: 0;

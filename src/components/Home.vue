@@ -13,32 +13,51 @@
         lg:text-left lg:items-start lg:w-screen
       "
     >
-      <h1 class="text-6xl font-bold">
-        <span class="dark:text-glow">Hey!</span> 🙋‍♂️
-      </h1>
+      <main class="flex flex-row items-center">
+        <h1 class="text-6xl font-bold mb-4">Hey!</h1>
+        <img
+          class="ml-4 mb-6"
+          width="120"
+          height="120"
+          src="../assets/memoji_hey.png"
+          alt="memoji_hey"
+        />
+      </main>
       <h2 class="text-2xl mt-16">
         <span class="text-4xl">I am David Drobnak.</span><br />
-        A
-        <span class="font-semibold gradient-light dark:gradient-primary"
-          >high-school computer science student</span
+        An
+        <span
+          class="
+            font-semibold
+            gradient-light
+            dark:gradient-primary dark:text-glow
+          "
+          >18 year old computer science student</span
         ><br />
-        building
-        <span class="font-semibold gradient-light dark:gradient-primary"
+        who loves creating
+        <span
+          class="
+            font-semibold
+            gradient-light
+            dark:gradient-primary dark:text-glow
+          "
           >web apps</span
         >.
       </h2>
       <hr class="mt-4" />
       <h2 class="mt-8 text-lg">
-        🌱 Currently learning
-        <a href="https://vuejs.org/" target="_blank">
-          <span class="border-b-2 border-green-600">Vue.JS</span>
-        </a>
-        with
-        <a href="https://tailwindcss.com/" target="_blank">
-          <span class="border-b-2 border-teal-500">TailwindCSS</span>
+        🛠️ Currently building
+        <a href="https://gradient-tool-daviddrob.vercel.app/" target="_blank">
+          <span class="border-b-2 border-cyan-500">Gradient Animator</span>
         </a>
       </h2>
       <h2 class="mt-4 text-lg">🌆 Based near Vienna, Austria</h2>
+      <hr class="mt-4" />
+      <h2 class="mt-4 text-lg">
+        <a class="border-b-2 pb-1" href="/projects">
+          ➡️ Checkout my projects
+        </a>
+      </h2>
     </div>
   </div>
 </template>
