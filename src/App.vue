@@ -1,6 +1,15 @@
 <template>
-  <div id="app" class="bg-gray-50 dark:bg-neutral-900 h-screen flex">
-    <Links class="" />
+  <div
+    id="app"
+    class="
+      bg-gray-50
+      dark:bg-neutral-900
+      h-screen
+      flex flex-col-reverse
+      md:flex-row
+    "
+  >
+    <Links />
     <router-view></router-view>
   </div>
 </template>

@@ -1,6 +1,15 @@
 <template>
   <div
-    class="flex h-5/6 mt-24 lg:w-3/5 m-auto text-neutral-900 dark:text-white"
+    class="
+      flex
+      h-5/6
+      md:mt-24
+      lg:w-3/5
+      m-auto
+      md:ml-0
+      text-neutral-900
+      dark:text-white
+    "
   >
     <div
       id="hero"
@@ -23,7 +32,7 @@
           alt="memoji_hey"
         />
       </main>
-      <h2 class="text-2xl mt-16">
+      <h2 class="text-2xl mt-8 md:mt-16 mx-4 md:mx-0">
         <span class="text-4xl">I am David Drobnak.</span><br />
         An
         <span
@@ -54,7 +63,10 @@
       <h2 class="mt-4 text-lg">🌆 Based near Vienna, Austria</h2>
       <hr class="mt-4" />
       <h2 class="mt-4 text-lg">
-        <a class="border-b-2 pb-1" href="/projects">
+        <a
+          class="border-b-2 border-neutral-700 dark:border-neutral-200 pb-1"
+          href="/projects"
+        >
           ➡️ Checkout my projects
         </a>
       </h2>

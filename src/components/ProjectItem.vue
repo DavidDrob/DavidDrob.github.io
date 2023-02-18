@@ -1,11 +1,11 @@
 <template>
   <div
     class="
-      flex flex-row
+      flex flex-col
+      xl:flex-row
       justify-between
       items-center
       w-3/4
-      mb-28
       bg-neutral-200
       text-neutral-700
       dark:bg-neutral-700
@@ -13,19 +13,17 @@
       dark:text-white
     "
   >
-    <aside class="pl-4 w-5/6 mb-4 font-semibold">
+    <aside class="pl-4 xl:w-5/6 mb-4 font-semibold">
       <div class="mb-3">
         <p class="text-4xl font-semibold my-4 pr-8">
           {{ title }}
         </p>
         <p class="mt-2 w-full pr-8 font-light">{{ description }}</p>
       </div>
-      <p
-        class="font-semibold text-white border-b-2 border-green-400 w-fit mb-3"
-      >
+      <p class="font-semibold border-b-2 border-green-400 w-fit mb-3">
         <a :href="demo" target="_blank"> Open Website </a>
       </p>
-      <p class="font-semibold text-white border-b-2 border-green-400 w-fit">
+      <p class="font-semibold border-b-2 border-green-400 w-fit">
         <a :href="github" target="_blank"> View the source-code </a>
       </p>
       <ul class="mt-6 flex items-center w-3/4 flex-wrap lg:flex-nowrap">
@@ -44,7 +42,7 @@
       :alt="image"
       width="480"
       height="270"
-      class="rounded-xl mr-4"
+      class="xl:w-80 rounded-b-xl md:rounded-xl xl:mr-4"
     />
   </div>
 </template>

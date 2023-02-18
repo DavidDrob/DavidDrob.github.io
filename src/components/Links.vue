@@ -1,24 +1,68 @@
 <template>
-  <nav
+  <div
     class="
       absolute
+      md:hidden
+      right-4
+      top-4
+      z-50
+      text-neutral-700
+      dark:text-white
+    "
+    @click="toggleMenu"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-8 h-8"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+      />
+    </svg>
+  </div>
+  <div
+    class="
+      fixed
+      top-0
+      left-0
+      right-0
+      z-30
+      w-full
+      p-4
+      overflow-x-hidden overflow-y-auto
+      bg-black/40
+      md:inset-0
+      h-full
+    "
+    :class="[isOpen ? 'inline' : 'hidden']"
+  ></div>
+  <nav
+    class="
+      z-40
+      bottom-16
       inset-x-0
-      lg:inset-0 lg:w-min
-      bottom-6
-      lg:h-3/5
+      lg:inset-0 lg:w-min lg:h-3/5
       m-auto
       rounded-xl
-      p-5
+      p-8
+      md:p-5
       lg:ml-6 lg:flex
       table-column
-      w-1/2
+      w-2/3
+      md:w-1/2
       overflow-auto
-      h-1/5
       lg:overflow-hidden lg:flex-col
       items-center
       bg-neutral-200
       dark:bg-neutral-700
     "
+    :class="[isOpen ? 'absolute' : 'hidden']"
   >
     <div>
       <router-link
@@ -223,9 +267,14 @@ export default {
   data() {
     return {
       buttonColor: "",
+      isOpen: false,
     };
   },
   methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen;
+      this.$emit("openToggle", this.isOpen);
+    },
     setTheme() {
       if (localStorage.theme === "dark") {
         localStorage.theme = "light";
