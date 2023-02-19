@@ -30,6 +30,16 @@
     >
       <ProjectItem
         class="mb-12"
+        title="Gradient Animator"
+        description="Gradient Animator allows you to create and animate those cool looking modern gradients and get the CSS code right away or pick one of the pre-made gradients."
+        :techs="['Vue.JS', 'TailwindCSS']"
+        github="https://github.com/DavidDrob/gradient-animator"
+        demo="https://gradient-tool-daviddrob.vercel.app/"
+        video="gradient-animator"
+      />
+
+      <ProjectItem
+        class="mb-12"
         title="Clean Tab"
         description="Clean Tab is a chromium extension that allows you to style a new tab in your chromium browser. It also shows the current weather in you area."
         :techs="['Vue.JS']"

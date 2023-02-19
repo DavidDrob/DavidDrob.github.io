@@ -33,7 +33,7 @@
       <ul class="mt-6 pb-4 flex items-center w-3/4 flex-wrap lg:flex-nowrap">
         <div class="flex" v-for="(tech, index) in techs" :key="index">
           <li
-            class="shadow-lg px-3 py-1 rounded-xl mr-3 lg:mb-0 my-1"
+            class="shadow-lg px-3 py-1 rounded-xl mr-3 lg:mb-0 my-2"
             :class="techColorMap[tech]"
           >
             {{ tech }}
@@ -42,19 +42,31 @@
       </ul>
     </aside>
     <img
+      v-if="image"
       :src="imageUrl"
       :alt="image"
       width="480"
       height="270"
       class="w-full xl:w-[30rem] xl:my-4 rounded-b-xl md:rounded-xl xl:mr-4"
     />
+    <video
+      v-if="video"
+      muted
+      autoplay
+      loop
+      width="480"
+      height="270"
+      class="w-full xl:w-[30rem] xl:my-4 rounded-b-xl md:rounded-xl xl:mr-4"
+    >
+      <source :src="videoUrl" type="video/mp4" />
+    </video>
   </div>
 </template>
 
 <script>
 export default {
   name: "Project",
-  props: ["title", "description", "techs", "image", "github", "demo"],
+  props: ["title", "description", "techs", "image", "video", "github", "demo"],
   data() {
     return {
       techColorMap: {
@@ -74,6 +86,9 @@ export default {
   computed: {
     imageUrl() {
       return new URL(`../assets/${this.image}.png`, import.meta.url).href;
+    },
+    videoUrl() {
+      return new URL(`../assets/${this.video}.mp4`, import.meta.url).href;
     },
   },
 };
