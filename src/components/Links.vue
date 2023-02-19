@@ -78,7 +78,7 @@
           cursor-pointer
           transition
           ease-out
-          hover:-translate-y-1 hover:scale-110
+          hover:-translate-1 hover:scale-110
           duration-200
         "
         to="/"
@@ -114,7 +114,7 @@
           cursor-pointer
           transition
           ease-out
-          hover:-translate-y-1 hover:scale-110
+          hover:-translate-1 hover:scale-110
           duration-200
         "
         to="/projects"
@@ -151,7 +151,7 @@
           cursor-pointer
           transition
           ease-out
-          hover:-translate-y-1 hover:scale-110
+          hover:-translate-1 hover:scale-110
           duration-200
         "
       >
@@ -187,7 +187,7 @@
           cursor-pointer
           transition
           ease-out
-          hover:-translate-y-1 hover:scale-110
+          hover:-translate-1 hover:scale-110
           duration-200
         "
       >

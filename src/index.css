@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
+  .underline-white {
+    background-image: linear-gradient(rgb(255 255 255), rgb(255 255 255));
+  }
   .text-glow {
     text-shadow: 0 0 80px rgba(73, 180, 46, 0.76),
       0 0 32px rgba(65, 255, 154, 0.384);

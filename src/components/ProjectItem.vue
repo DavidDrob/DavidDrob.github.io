@@ -13,20 +13,24 @@
       dark:text-white
     "
   >
-    <aside class="pl-4 xl:w-5/6 mb-4 font-semibold">
+    <aside
+      class="pl-4 xl:w-4/6 font-semibold flex flex-col h-5/6 justify-around"
+    >
       <div class="mb-3">
-        <p class="text-4xl font-semibold my-4 pr-8">
+        <p class="text-4xl font-semibold py-4 pr-8">
           {{ title }}
         </p>
         <p class="mt-2 w-full pr-8 font-light">{{ description }}</p>
       </div>
-      <p class="font-semibold border-b-2 border-green-400 w-fit mb-3">
-        <a :href="demo" target="_blank"> Open Website </a>
-      </p>
-      <p class="font-semibold border-b-2 border-green-400 w-fit">
-        <a :href="github" target="_blank"> View the source-code </a>
-      </p>
-      <ul class="mt-6 flex items-center w-3/4 flex-wrap lg:flex-nowrap">
+      <div>
+        <p class="font-semibold border-b-2 border-green-400 w-fit mb-3">
+          <a :href="demo" target="_blank"> Open Website </a>
+        </p>
+        <p class="font-semibold border-b-2 border-green-400 w-fit">
+          <a :href="github" target="_blank"> View the source-code </a>
+        </p>
+      </div>
+      <ul class="mt-6 pb-4 flex items-center w-3/4 flex-wrap lg:flex-nowrap">
         <div class="flex" v-for="(tech, index) in techs" :key="index">
           <li
             class="shadow-lg px-3 py-1 rounded-xl mr-3 lg:mb-0 my-1"
@@ -42,7 +46,7 @@
       :alt="image"
       width="480"
       height="270"
-      class="xl:w-80 rounded-b-xl md:rounded-xl xl:mr-4"
+      class="w-full xl:w-[30rem] xl:my-4 rounded-b-xl md:rounded-xl xl:mr-4"
     />
   </div>
 </template>

@@ -4,7 +4,7 @@
       flex
       h-5/6
       md:mt-24
-      lg:w-3/5
+      lg:w-4/5 lg:ml-16
       m-auto
       md:ml-0
       text-neutral-900
@@ -57,16 +57,13 @@
       <h2 class="mt-8 text-lg">
         🛠️ Currently building
         <a href="https://gradient-tool-daviddrob.vercel.app/" target="_blank">
-          <span class="border-b-2 border-cyan-500">Gradient Animator</span>
+          <span class="border-b border-cyan-500">Gradient Animator</span>
         </a>
       </h2>
       <h2 class="mt-4 text-lg">🌆 Based near Vienna, Austria</h2>
       <hr class="mt-4" />
       <h2 class="mt-4 text-lg">
-        <a
-          class="border-b-2 border-neutral-700 dark:border-neutral-200 pb-1"
-          href="/projects"
-        >
+        <a class="under-line dark:underline-white pb-1" href="/projects">
           ➡️ Checkout my projects
         </a>
       </h2>
@@ -85,5 +82,16 @@ export default {
   background: linear-gradient(to right, #30cbd0, #59d63a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.under-line {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  background-size: 60% 3.5%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+.under-line:hover {
+  background-size: 100% 3.5%;
 }
 </style>
