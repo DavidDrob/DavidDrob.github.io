@@ -304,6 +304,11 @@ export default {
     localStorage.setItem("theme", "dark");
     this.checkTheme();
   },
+  watch: {
+    $route(to, from) {
+      this.isOpen = false;
+    },
+  },
 };
 </script>
 
