@@ -16,7 +16,6 @@
       dark:text-white
     "
   >
-    <h1 class="text-6xl mb-12 font-bold font-serif">Projects</h1>
     <div
       id="hero"
       class="
@@ -28,6 +27,7 @@
         overflow-x-hidden
       "
     >
+      <h1 class="text-6xl mb-12 font-bold font-serif">Projects</h1>
       <ProjectItem
         class="mb-12"
         title="Gradient Animator"
