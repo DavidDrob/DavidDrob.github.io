@@ -6,7 +6,8 @@
       dark:bg-neutral-900
       h-screen
       flex flex-col-reverse
-      md:flex-row
+      mb-16
+      md:mb-0 md:flex-row
     "
   >
     <Links />

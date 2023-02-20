@@ -63,9 +63,12 @@
       <h2 class="mt-4 text-lg">🌆 Based near Vienna, Austria</h2>
       <hr class="mt-4" />
       <h2 class="mt-4 text-lg">
-        <a class="under-line dark:underline-white pb-1" href="/projects">
+        <router-link
+          class="under-line dark:underline-white pb-1"
+          to="/projects"
+        >
           ➡️ Checkout my projects
-        </a>
+        </router-link>
       </h2>
     </div>
   </div>
